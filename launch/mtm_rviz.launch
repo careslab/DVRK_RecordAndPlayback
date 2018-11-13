@@ -5,7 +5,7 @@
   <arg name="rate" default="100" />
   <arg name="rviz" default="true"/>
   <arg name="ns" default="/dvrk_mtm"/>
-  <arg name="model" default="$(find autocamera)/model/mtm_left.urdf.xacro" />
+  <arg name="model" default="$(find dvrk_record_and_playback)/model/mtm_left.urdf.xacro" />
   
   <group ns="$(arg ns)">
 
@@ -29,7 +29,7 @@
 
   
   <!--<node name="rviz" pkg="rviz" type="rviz"
-    args="-d $(find autocamera)/rviz/two_mtm.rviz"
+    args="-d $(find dvrk_record_and_playback)/rviz/two_mtm.rviz"
     if="$(arg rviz)" /> -->
   
 </launch>

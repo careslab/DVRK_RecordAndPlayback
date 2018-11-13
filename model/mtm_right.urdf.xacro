@@ -2,7 +2,7 @@
 <robot name="master" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- Macros -->
-  <xacro:include filename="$(find autocamera)/model/mtm.urdf.xacro"/>
+  <xacro:include filename="$(find dvrk_record_and_playback)/model/mtm.urdf.xacro"/>
 
   <link name="world"/>
   <xacro:mtm_right 

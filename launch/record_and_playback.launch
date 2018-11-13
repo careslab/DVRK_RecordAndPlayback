@@ -1,7 +1,4 @@
 <launch>
-  <!-- fakecam rviz -->
-  <include file="$(find dvrk_record_and_playback)/launch/fakecam.launch"/>  
-
   <!-- ecm rviz -->
   <include file="$(find dvrk_model)/launch/ecm.launch">
     <arg name="model" value="$(find dvrk_record_and_playback)/model/ecm.xacro"/>
@@ -51,8 +48,6 @@
   <node name="rviz" pkg="rviz" type="rviz"
 	args="-d $(find dvrk_record_and_playback)/rviz/simulation.rviz"/>  
 
-  <!-- joystick node -->
-  <node name="joy" pkg="joy" type="joy_node"/>
 </launch>
 
 

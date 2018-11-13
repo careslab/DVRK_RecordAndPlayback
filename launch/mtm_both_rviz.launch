@@ -6,7 +6,7 @@
   <arg name="rviz" default="true"/>
   
   <group ns="/dvrk_mtmr">
-    <arg name="model" default="$(find autocamera)/model/mtm_right.urdf.xacro" />
+    <arg name="model" default="$(find dvrk_record_and_playback)/model/mtm_right.urdf.xacro" />
 
     <param name="robot_description"
            command="rosrun xacro xacro.py $(arg model)"/>
@@ -23,7 +23,7 @@
   </group>
   
   <group ns="/dvrk_mtml">
-    <arg name="model" default="$(find autocamera)/model/mtm_left.urdf.xacro" />
+    <arg name="model" default="$(find dvrk_record_and_playback)/model/mtm_left.urdf.xacro" />
     
     <param name="robot_description"
            command="rosrun xacro xacro.py $(arg model)"/>
