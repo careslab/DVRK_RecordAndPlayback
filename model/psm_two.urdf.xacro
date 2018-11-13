@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<robot name="dvrk_psm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+ <!-- Macros -->
+  <xacro:include filename="$(find dvrk_model)/model/psm.urdf.xacro"/>
+
+  <link name="world"/>
+  <xacro:psm_sca 
+      prefix="two_"
+      parent_link="world"
+      xyz="-0.211199837665 -0.00295592604211 0.365841925574" rpy="1.33192886643 0.684042546167 1.69908758305"
+	/>
+</robot>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<robot name="master" xmlns:xacro="http://www.ros.org/wiki/xacro">
+   <!-- Macros -->
+  <xacro:include filename="$(find dvrk_model)/model/ecm.urdf.xacro"/>
+
+  <link name="world"/>
+  <xacro:ecm
+      prefix="ecm"
+      parent_link="world"
+      xyz="-0.475260664607 -1.33761523189 0.227447281344" rpy="0.7463856515 -0.426174616006 1.22747925482"
+      />
+</robot>

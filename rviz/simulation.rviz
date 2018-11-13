@@ -1,0 +1,935 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Status1
+        - /TF1/Frames1
+        - /TF1/Tree1
+        - /ModelMTML1/Links1
+        - /CameraLeft1
+        - /CameraLeft1/Visibility1
+        - /CameraRight1
+        - /CameraRight1/Visibility1
+        - /Polygon1
+        - /Marker1
+        - /Marker1/Namespaces1
+        - /left_tool1
+        - /camera_image1
+        - /new_psm1_base1
+        - /new_psm2_base1
+        - /Marker2
+        - /Illuminance1
+        - /Polygon2
+        - /Polygon3
+      Splitter Ratio: 0.674419
+    Tree Height: 722
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: CameraLeft
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 255; 255; 255
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 1500
+      Frames:
+        All Enabled: false
+        ecm_base_link:
+          Value: false
+        ecm_insertion_link:
+          Value: false
+        ecm_pitch_link:
+          Value: false
+        ecm_pitch_link_1:
+          Value: false
+        ecm_pitch_link_2:
+          Value: false
+        ecm_pitch_link_3:
+          Value: false
+        ecm_roll_link:
+          Value: true
+        ecm_setup_base_link:
+          Value: false
+        ecm_setup_link:
+          Value: false
+        ecm_yaw_link:
+          Value: false
+        fake_cam_left_optical_link:
+          Value: false
+        fake_cam_right_optical_link:
+          Value: false
+        fake_camera_link:
+          Value: false
+        left_back_parallel_link:
+          Value: false
+        left_bottom_parallel_link:
+          Value: false
+        left_outer_yaw_link:
+          Value: false
+        left_top_panel:
+          Value: false
+        left_top_parallel_link:
+          Value: false
+        left_wrist_pitch_link:
+          Value: false
+        left_wrist_platform_link:
+          Value: false
+        left_wrist_roll_link:
+          Value: true
+        left_wrist_yaw_link:
+          Value: false
+        one_outer_insertion_link:
+          Value: false
+        one_outer_pitch_back_link:
+          Value: false
+        one_outer_pitch_bottom_link:
+          Value: false
+        one_outer_pitch_front_link:
+          Value: false
+        one_outer_pitch_link:
+          Value: false
+        one_outer_pitch_top_link:
+          Value: false
+        one_outer_yaw_link:
+          Value: false
+        one_psm_base_link:
+          Value: false
+        one_tool_main_link:
+          Value: false
+        one_tool_tip_link:
+          Value: false
+        one_tool_wrist_link:
+          Value: false
+        one_tool_wrist_sca_ee_link_0:
+          Value: false
+        one_tool_wrist_sca_ee_link_1:
+          Value: false
+        one_tool_wrist_sca_ee_link_2:
+          Value: false
+        one_tool_wrist_sca_link:
+          Value: false
+        one_tool_wrist_sca_shaft_link:
+          Value: false
+        one_tool_wrist_shaft_link:
+          Value: false
+        right_back_parallel_link:
+          Value: false
+        right_bottom_parallel_link:
+          Value: false
+        right_outer_yaw_link:
+          Value: false
+        right_top_panel:
+          Value: false
+        right_top_parallel_link:
+          Value: false
+        right_wrist_pitch_link:
+          Value: false
+        right_wrist_platform_link:
+          Value: false
+        right_wrist_roll_link:
+          Value: false
+        right_wrist_yaw_link:
+          Value: false
+        two_outer_insertion_link:
+          Value: false
+        two_outer_pitch_back_link:
+          Value: false
+        two_outer_pitch_bottom_link:
+          Value: false
+        two_outer_pitch_front_link:
+          Value: false
+        two_outer_pitch_link:
+          Value: false
+        two_outer_pitch_top_link:
+          Value: false
+        two_outer_yaw_link:
+          Value: false
+        two_psm_base_link:
+          Value: false
+        two_tool_main_link:
+          Value: false
+        two_tool_tip_link:
+          Value: false
+        two_tool_wrist_link:
+          Value: false
+        two_tool_wrist_sca_ee_link_0:
+          Value: false
+        two_tool_wrist_sca_ee_link_1:
+          Value: false
+        two_tool_wrist_sca_ee_link_2:
+          Value: false
+        two_tool_wrist_sca_link:
+          Value: false
+        two_tool_wrist_sca_shaft_link:
+          Value: false
+        two_tool_wrist_shaft_link:
+          Value: false
+        world:
+          Value: false
+      Marker Scale: 0.1
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: false
+      Tree:
+        world:
+          ecm_setup_base_link:
+            ecm_setup_link:
+              ecm_base_link:
+                ecm_yaw_link:
+                  ecm_pitch_link:
+                    ecm_insertion_link:
+                      ecm_roll_link:
+                        fake_camera_link:
+                          fake_cam_left_optical_link:
+                            {}
+                          fake_cam_right_optical_link:
+                            {}
+                  ecm_pitch_link_1:
+                    ecm_pitch_link_2:
+                      ecm_pitch_link_3:
+                        {}
+          left_top_panel:
+            left_outer_yaw_link:
+              left_back_parallel_link:
+                left_bottom_parallel_link:
+                  left_wrist_platform_link:
+                    left_wrist_pitch_link:
+                      left_wrist_yaw_link:
+                        left_wrist_roll_link:
+                          {}
+              left_top_parallel_link:
+                {}
+          one_psm_base_link:
+            one_outer_yaw_link:
+              one_outer_pitch_back_link:
+                one_outer_pitch_bottom_link:
+                  one_outer_insertion_link:
+                    {}
+                one_outer_pitch_top_link:
+                  {}
+              one_outer_pitch_front_link:
+                {}
+              one_outer_pitch_link:
+                one_tool_main_link:
+                  one_tool_wrist_link:
+                    one_tool_wrist_shaft_link:
+                      one_tool_wrist_sca_link:
+                        one_tool_wrist_sca_shaft_link:
+                          one_tool_tip_link:
+                            {}
+                          one_tool_wrist_sca_ee_link_0:
+                            {}
+                          one_tool_wrist_sca_ee_link_1:
+                            {}
+                          one_tool_wrist_sca_ee_link_2:
+                            {}
+          right_top_panel:
+            right_outer_yaw_link:
+              right_back_parallel_link:
+                right_bottom_parallel_link:
+                  right_wrist_platform_link:
+                    right_wrist_pitch_link:
+                      right_wrist_yaw_link:
+                        right_wrist_roll_link:
+                          {}
+              right_top_parallel_link:
+                {}
+          two_psm_base_link:
+            two_outer_yaw_link:
+              two_outer_pitch_back_link:
+                two_outer_pitch_bottom_link:
+                  two_outer_insertion_link:
+                    {}
+                two_outer_pitch_top_link:
+                  {}
+              two_outer_pitch_front_link:
+                {}
+              two_outer_pitch_link:
+                two_tool_main_link:
+                  two_tool_wrist_link:
+                    two_tool_wrist_shaft_link:
+                      two_tool_wrist_sca_link:
+                        two_tool_wrist_sca_shaft_link:
+                          two_tool_tip_link:
+                            {}
+                          two_tool_wrist_sca_ee_link_0:
+                            {}
+                          two_tool_wrist_sca_ee_link_1:
+                            {}
+                          two_tool_wrist_sca_ee_link_2:
+                            {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        ecm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ecm_insertion_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ecm_pitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ecm_pitch_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ecm_pitch_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ecm_pitch_link_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ecm_roll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ecm_setup_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ecm_setup_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ecm_yaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: ModelECM
+      Robot Description: /dvrk_ecm/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: true
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        one_outer_insertion_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_outer_pitch_back_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_outer_pitch_bottom_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_outer_pitch_front_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_outer_pitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        one_outer_pitch_top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_outer_yaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_psm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_main_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        one_tool_wrist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_wrist_sca_ee_link_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_wrist_sca_ee_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_wrist_sca_ee_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_wrist_sca_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_wrist_sca_shaft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        one_tool_wrist_shaft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: ModelPSM1
+      Robot Description: /dvrk_psm1/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: true
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        two_outer_insertion_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_outer_pitch_back_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_outer_pitch_bottom_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_outer_pitch_front_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_outer_pitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        two_outer_pitch_top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_outer_yaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_psm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_main_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        two_tool_wrist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_wrist_sca_ee_link_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_wrist_sca_ee_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_wrist_sca_ee_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_wrist_sca_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_wrist_sca_shaft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        two_tool_wrist_shaft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: ModelPSM2
+      Robot Description: /dvrk_psm2/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        left_back_parallel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_bottom_parallel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_outer_yaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_top_panel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_top_parallel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_wrist_pitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_wrist_platform_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_wrist_roll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_wrist_yaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: ModelMTML
+      Robot Description: /dvrk_mtml/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        right_back_parallel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_bottom_parallel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_outer_yaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_top_panel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_top_parallel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_wrist_pitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_wrist_platform_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_wrist_roll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_wrist_yaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: ModelMTMR
+      Robot Description: /dvrk_mtmr/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/Camera
+      Enabled: false
+      Image Rendering: overlay
+      Image Topic: /autocamera_image_left
+      Name: CameraLeft
+      Overlay Alpha: 1
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+      Visibility:
+        CameraRight: true
+        Grid: true
+        Illuminance: true
+        Marker: true
+        ModelECM: true
+        ModelMTML: true
+        ModelMTMR: true
+        ModelPSM1: true
+        ModelPSM2: true
+        Polygon: true
+        TF: false
+        Value: true
+        camera_image: true
+        left_tool: true
+        new_psm1_base: true
+        new_psm2_base: true
+      Zoom Factor: 1
+    - Class: rviz/Camera
+      Enabled: false
+      Image Rendering: overlay
+      Image Topic: /fakecam_node/fake_image_right
+      Name: CameraRight
+      Overlay Alpha: 0.7
+      Queue Size: 7
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+      Visibility:
+        CameraLeft: true
+        Grid: true
+        Illuminance: true
+        Marker: true
+        ModelECM: true
+        ModelMTML: true
+        ModelMTMR: true
+        ModelPSM1: true
+        ModelPSM2: true
+        Polygon: true
+        TF: false
+        Value: true
+        camera_image: true
+        left_tool: true
+        new_psm1_base: true
+        new_psm2_base: true
+      Zoom Factor: 1
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 25; 255; 0
+      Enabled: false
+      Name: Polygon
+      Topic: ""
+      Unreliable: false
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /marker_subscriber
+      Name: Marker
+      Namespaces:
+        my_namespace: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /left_arm
+      Name: left_tool
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /autocamera_image_left
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: camera_image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 0.2
+      Name: new_psm1_base
+      Radius: 0.01
+      Reference Frame: <Fixed Frame>
+      Value: false
+    - Class: rviz/Axes
+      Enabled: true
+      Length: 0.5
+      Name: new_psm2_base
+      Radius: 0.02
+      Reference Frame: mtml_transform
+      Value: true
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /mtml_delta
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /psm2_delta
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: false
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: illuminance
+      Class: rviz/Illuminance
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 10
+      Enabled: true
+      Invert Rainbow: true
+      Max Color: 255; 255; 255
+      Max Intensity: 1000
+      Min Color: 0; 0; 0
+      Min Intensity: 200
+      Name: Illuminance
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.1
+      Style: Flat Squares
+      Topic: /my_light
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 255; 82; 247
+      Enabled: false
+      Name: Polygon
+      Topic: /deadzone
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 255; 255; 0
+      Enabled: false
+      Name: Polygon
+      Topic: /boundaries
+      Unreliable: false
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 67; 67; 67
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 1.09829
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.157189
+        Y: -0.126092
+        Z: 0.443358
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.290203
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 1.83334
+    Saved: ~
+Window Geometry:
+  CameraLeft:
+    collapsed: false
+  CameraRight:
+    collapsed: false
+  Displays:
+    collapsed: true
+  Height: 1000
+  Hide Left Dock: true
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd0000000400000000000001a200000361fc020000000bfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000000fb000001a700000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073000000002800000361000000dd00fffffffb0000001600430061006d006500720061005200690067006800740200000d5300000400000001720000024cfb0000001400430061006d006500720061004c00650066007402000005c0000000b5000002de00000289fb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001800630061006d006500720061005f0069006d00610067006502000000410000006a00000280000001e0000000010000010f00000245fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000002800000245000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000005000000003bfc0100000002fb0000000800540069006d0065010000000000000500000002f600fffffffb0000000800540069006d00650100000000000004500000000000000000000005000000036100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1280
+  X: 0
+  Y: 24
+  camera_image:
+    collapsed: false

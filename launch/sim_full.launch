@@ -1,0 +1,31 @@
+<launch>
+  <arg name="ecm" default="true"/>
+  <arg name="rviz" default="true"/>    
+  
+  <!-- ecm simulation -->
+  <include if="$(arg ecm)" file="$(find autocamera)/launch/sim_ecm.launch">
+    <arg name="rviz" value="false"/>    
+  </include>
+
+  <!-- psm1 simulation -->
+  <include file="$(find autocamera)/launch/sim_psm.launch">
+    <arg name="rviz" value="false"/>
+    <arg name="ns" value="/dvrk_psm1"/>
+    <arg name="prefix" value="one_"/>
+    <arg name="model" default="$(find autocamera)/model/psm_one.urdf.xacro"/>
+  </include>
+
+  <!-- psm1 simulation -->
+  <include file="$(find autocamera)/launch/sim_psm.launch">
+    <arg name="rviz" value="false"/>
+    <arg name="ns" value="/dvrk_psm2"/>
+    <arg name="prefix" value="two_"/>
+    <arg name="model" default="$(find autocamera)/model/psm_two.urdf.xacro"/>
+  </include>
+  
+  <!-- rviz  -->
+  <node if="$(arg rviz)" name="rviz" pkg="rviz" type="rviz"
+	args="-d $(find autocamera)/rviz/simulation.rviz"/>  
+</launch>
+
+

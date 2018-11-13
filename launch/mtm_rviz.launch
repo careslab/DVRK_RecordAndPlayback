@@ -1,0 +1,37 @@
+<!-- one mtm -->
+
+<launch>
+  <arg name="gui" default="true" />
+  <arg name="rate" default="100" />
+  <arg name="rviz" default="true"/>
+  <arg name="ns" default="/dvrk_mtm"/>
+  <arg name="model" default="$(find autocamera)/model/mtm_left.urdf.xacro" />
+  
+  <group ns="$(arg ns)">
+
+    <param name="robot_description"
+           command="rosrun xacro xacro.py $(arg model)"/>
+    <param name="use_gui" value="$(arg gui)"/>
+    <param name="rate" value="$(arg rate)"/>
+
+ 	<rosparam param="source_list" subst_value="True">
+      [joint_states_robot]
+    </rosparam>
+    
+    <node name="joint_state_publisher"
+          pkg="joint_state_publisher"
+          type="joint_state_publisher">
+      <!--<remap from="/joint_state_publisher/enable_slider"
+             to="joint_state_publisher/enable_slider"/> -->
+    </node>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  </group>
+
+  
+  <!--<node name="rviz" pkg="rviz" type="rviz"
+    args="-d $(find autocamera)/rviz/two_mtm.rviz"
+    if="$(arg rviz)" /> -->
+  
+</launch>
+
+

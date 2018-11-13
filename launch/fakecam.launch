@@ -1,0 +1,17 @@
+<launch>
+  <!-- fakecam inital transform  x y z yaw pitch roll -->
+  <arg name="transform" default="0.00449585 0.0082469 0.003321 1.57079632679 0.0 0.0"/>
+
+  <!-- fakecam node   -->
+  <node pkg="fakecam" type="fakecam_node" name="fakecam_node">
+    <param name="calibration_file_uri_left" value="package://fakecam/data/camera_parameters_left.txt"/>
+    <param name="calibration_file_uri_right" value="package://fakecam/data/camera_parameters_right.txt"/>
+    <param name="camera_name" value="fake_stereo"/>
+    <param name="transform" value="$(arg transform)"/>
+  </node>
+
+  <!-- static publisher used when we need static  -->
+  <node pkg="tf" type="static_transform_publisher" name="fakecam_static_publishter"
+        args="$(arg transform) /ecm_roll_link /fake_camera_link 200"/>
+
+</launch>

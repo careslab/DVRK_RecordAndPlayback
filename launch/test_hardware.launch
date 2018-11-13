@@ -1,0 +1,61 @@
+<launch>
+  <!-- fakecam rviz -->
+  <include file="$(find autocamera)/launch/fakecam.launch"/>  
+
+  <!-- ecm rviz -->
+  <include file="$(find dvrk_model)/launch/ecm.launch">
+    <arg name="model" value="$(find autocamera)/model/ecm.xacro"/>
+    <arg name="rviz" value="false"/>
+    <arg name="rate" default="200" />
+  </include>
+
+  <!-- psm one -->
+  <include file="$(find autocamera)/launch/psm_one_rviz.launch">
+    <arg name="model" default="$(find autocamera)/model/psm_one.urdf.xacro"/>
+    <arg name="rate" default="200" />
+    <arg name="rviz" value="false"/>
+    <arg name="ns" default="/dvrk_psm1"/>
+  </include>
+
+  <!-- psm two -->
+  <include file="$(find autocamera)/launch/psm_one_rviz.launch">
+    <arg name="model" default="$(find autocamera)/model/psm_two.urdf.xacro"/>
+    <arg name="rate" default="200" />
+    <arg name="rviz" value="false"/>
+    <arg name="ns" default="/dvrk_psm2"/>
+  </include>
+  
+  <!-- mtm left -->
+  <include file="$(find autocamera)/launch/mtm_rviz.launch">
+  	<arg name="model" default="$(find autocamera)/model/mtm_left.urdf.xacro"/>
+    <arg name="rate" default="200" />
+    <arg name="rviz" value="false"/>
+    <arg name="ns" default="/dvrk_mtml"/>
+  </include> 
+  
+  <!-- mtm right -->
+  <include file="$(find autocamera)/launch/mtm_rviz.launch">
+  	<arg name="model" default="$(find autocamera)/model/mtm_right.urdf.xacro"/>
+    <arg name="rate" default="200" />
+    <arg name="rviz" value="false"/>
+    <arg name="ns" default="/dvrk_mtmr"/>
+  </include>
+  
+  <group ns="/dvrk_ecm">	      
+	  <node name="camera_control_node"
+	    	pkg="autocamera"				
+	        type="camera_control_node.py"/>
+  </group>
+  
+  <!-- rviz  -->
+  <node name="rviz" pkg="rviz" type="rviz"
+	args="-d $(find autocamera)/rviz/simulation.rviz"/>  
+
+  <!-- console json -->
+  <node name="dVRKBridge" pkg="dvrk_robot" type="dvrk_console_json" args="-j /home/dvrk/dev/Working\ Settings\ Files/Oct-2016/console-full-wsu.json"/>
+
+  <!-- joystick node -->
+  <node name="joy" pkg="joy" type="joy_node"/>
+</launch>
+
+

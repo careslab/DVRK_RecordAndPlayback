@@ -1,0 +1,23 @@
+<launch>
+  <arg name="rviz" default="true"/>
+
+  <!-- simulated ecm -->
+  <node name="sim_ecm_ros" pkg="simulation" type="sim_ecm_ros"/>  
+
+  <!-- fakecam rviz -->
+  <include file="$(find autocamera)/launch/fakecam.launch"/>  
+
+  <!-- ecm rviz -->
+  <include file="$(find dvrk_model)/launch/ecm.launch">
+    <arg name="model" value="$(find autocamera)/model/ecm.xacro"/>
+    <arg name="rviz" value="false"/>
+    <arg name="rate" default="200" />
+  </include>
+
+  <!-- rviz  -->
+  <node name="rviz" pkg="rviz" type="rviz"
+	args="-d $(find autocamera)/rviz/simulation.rviz"
+    if="$(arg rviz)"/>  
+</launch>
+
+
