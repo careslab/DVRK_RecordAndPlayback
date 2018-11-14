@@ -1,15 +1,13 @@
 DVRK_RecordAndPlayback
 
-==================================================================
-DESCRIPTION
-==================================================================
+# DESCRIPTION
+
 This package is used to record data from the da Vinci Research Kit
 or play them back to it.
 
 
-==================================================================
-INSTALLATION
-==================================================================
+# INSTALLATION
+
 Install in a catkin workspace:
 
 1. Clone the package into a catkin workspace:
@@ -20,9 +18,8 @@ $ git clone https://github.com/careslab/DVRK_RecordAndPlayback.git
 $ catkin build
 
  
-==================================================================
-USAGE
-==================================================================
+# USAGE
+
 Launch an RViz simulation and a modified rqt_bag window which can
 be to record or play the data back into the hardware:
 
@@ -42,9 +39,9 @@ The hardware needs to be prepared before the data can be played
 back into it. The Home button prepares the hardware. Afterwards
 the data can be played back.
 
-==================================================================
-USING RQT_BAG
-==================================================================
+
+# USING RQT_BAG
+
 After using the "Rename Topics" and "Home" buttons everything is 
 ready for playback. In order to do that simply:
 1. Choose the topics that you want to playback and click publish. 
@@ -52,9 +49,8 @@ ready for playback. In order to do that simply:
 back and publish into the hardware or simulation
 
 
-==================================================================
-ABOUT
-==================================================================
+# ABOUT
+
 1. Author : Shahab Eslamian (Shahab.eslamian@wayne.edu)
 2. Organization : Careslab, Wayne State University
 3. Supervisor : Abhilash Pandya (apandya@indigo.eng.wayne.edu)
