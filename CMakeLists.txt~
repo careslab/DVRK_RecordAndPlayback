@@ -1,11 +1,14 @@
+#execute_process(COMMAND "${CMAKE_COMMAND}" "-E" "environment")
 cmake_minimum_required(VERSION 2.8.3)
 project(dvrk_record_and_playback)
+
+
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED)
-
+#find_package(ros REQUIRED)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -122,7 +125,7 @@ catkin_package(
 
 ## Declare a C++ executable
 # add_executable(dvrk_record_and_playback_node src/dvrk_record_and_playback_node.cpp)
-add_executable(rqt_bag src/rqt_bag/scripts/rqt_bag)
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(dvrk_record_and_playback_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
@@ -179,3 +182,8 @@ add_executable(rqt_bag src/rqt_bag/scripts/rqt_bag)
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+configure_file(src/rqt_bag/resource/bag_widget.ui $ENV{ROS_ETC_DIR}/../../share/rqt_bag/resource/bag_widget.ui)
+configure_file(src/rqt_bag/src/rqt_bag/bag_widget.py $ENV{RQT_BAG_SRC}/bag_widget.py)
+
+
+
