@@ -15,9 +15,9 @@ Install in a `catkin` workspace:
 $ git clone https://github.com/careslab/DVRK_RecordAndPlayback.git
 ```
 
-2. Build using `catkin`:
+2. Build using `catkin`. The installation needs extra permissions:
 ```
-$ catkin build
+$ sudo -E catkin build dvrk_record_and_playback
 ```
 
  
