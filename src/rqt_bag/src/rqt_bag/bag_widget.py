@@ -38,7 +38,9 @@ import rospkg
 
 from python_qt_binding import loadUi
 from python_qt_binding.QtCore import Qt, qWarning, Signal
-from python_qt_binding.QtGui import QFileDialog, QGraphicsView, QIcon, QWidget
+#from python_qt_binding.QtGui import QFileDialog, QGraphicsView, QIcon, QWidget
+from PyQt5.QtWidgets import QFileDialog, QGraphicsView, QWidget	
+from PyQt5.Qt import QIcon
 
 import rosbag
 import bag_helper
@@ -216,11 +218,11 @@ class BagWidget(QWidget):
   
 
     def add_joint_names(self, msg, topic):
-	if 'PSM1' in topic or 'PSM2' in topic:
+	if '/dvrk/PSM1/state_joint_current' in topic or '/dvrk/PSM2/state_joint_current' in topic:
                 msg.name = ['outer_yaw', 'outer_pitch', 'outer_insertion', 'outer_roll', 'outer_wrist_pitch', 'outer_wrist_yaw', 'jaw']
-        elif 'ECM' in topic:
+        elif '/dvrk/ECM/state_joint_current' in topic:
                 msg.name = ['outer_yaw', 'outer_pitch', 'insertion', 'outer_roll']
-        elif 'MTM' in topic:
+        elif '/dvrk/MTML/state_joint_current' in topic or '/dvrk/MTMR/state_joint_current' in topic:
                 msg.name = ['outer_yaw', 'shoulder_pitch', 'shoulder_pitch_parallel', 'elbow_pitch', 'wrist_platform', 'wrist_pitch', 'wrist_yaw', 'wrist_roll']
 	return msg
 
@@ -236,11 +238,13 @@ class BagWidget(QWidget):
 		topics_hw = {arm_name : '/dvrk/{}/set_position_joint'.format(arm_name) for arm_name in arm_names}
         	topics_sim = {arm_name : '/dvrk_{}/joint_states_robot'.format(arm_name.lower()) for arm_name in arm_names}
 		
+		
 		with rebag_sim as Y, rebag_hw as X:
 		    for topic, msg, t in bag:
 			arm_name_matches = False
 			for arm_name in arm_names:
-				if arm_name in topic:
+				# If topic is a 'JointState' topic and includes an arm name
+				if arm_name in topic and 'state_joint_current' in topic:
 					arm_name_matches = True
 					X.write(topics_hw[arm_name], msg, t)
 					msg = self.add_joint_names(msg, topic)

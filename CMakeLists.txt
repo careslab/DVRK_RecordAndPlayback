@@ -182,8 +182,9 @@ catkin_package(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-configure_file(src/rqt_bag/resource/bag_widget.ui $ENV{ROS_ETC_DIR}/../../share/rqt_bag/resource/bag_widget.ui)
-configure_file(src/rqt_bag/src/rqt_bag/bag_widget.py $ENV{RQT_BAG_SRC}/bag_widget.py)
+configure_file(src/rqt_bag/src/rqt_bag/bag_widget.py $ENV{ROS_ROOT}/../../lib/python2.7/dist-packages/rqt_bag/bag_widget.py COPYONLY)
+configure_file(src/rqt_bag/resource/bag_widget.ui $ENV{ROS_ROOT}/../rqt_bag/resource/bag_widget.ui COPYONLY)
+
 
 
 
